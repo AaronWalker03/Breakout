@@ -4,6 +4,7 @@
 #include "Paddle.h"
 #include "Ball.h"
 #include "BigBall.h"
+#include "LittleBall.h"
 #include "BrickManager.h"
 #include "PowerupManager.h"
 #include "MessagingSystem.h"
@@ -44,6 +45,7 @@ private:
     Paddle* _paddle;
     Ball* _ball;
     BigBall* _bigBall;
+    LittleBall* _littleBall;
     BrickManager* _brickManager;
     PowerupManager* _powerupManager;
     MessagingSystem* _messagingSystem;

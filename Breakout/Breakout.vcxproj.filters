@@ -66,6 +66,9 @@
     <ClCompile Include="BigBall.cpp">
       <Filter>Powerups</Filter>
     </ClCompile>
+    <ClCompile Include="LittleBall.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Ball.h">
@@ -114,6 +117,9 @@
       <Filter>Powerups</Filter>
     </ClInclude>
     <ClInclude Include="BigBall.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LittleBall.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

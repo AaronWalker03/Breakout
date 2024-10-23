@@ -5,7 +5,7 @@
 #include <iostream>
 
 GameManager::GameManager(sf::RenderWindow* window)
-    : _window(window), _paddle(nullptr), _ball(nullptr), _bigBall(nullptr), _brickManager(nullptr), _powerupManager(nullptr),
+    : _window(window), _paddle(nullptr), _ball(nullptr), _bigBall(nullptr), _littleBall(nullptr), _brickManager(nullptr), _powerupManager(nullptr),
     _messagingSystem(nullptr), _ui(nullptr), _pause(false), _time(0.f), _lives(3), _pauseHold(0.f), _levelComplete(false),
     _powerupInEffect({ none,0.f }), _timeLastPowerupSpawned(0.f)
 {
@@ -23,6 +23,7 @@ void GameManager::initialize()
     _messagingSystem = new MessagingSystem(_window);
     _ball = new Ball(_window, 400.0f, this); 
     _bigBall = new BigBall(_window, 300.0f, this);
+    _littleBall = new LittleBall(_window, 450.0f, this);
     _powerupManager = new PowerupManager(_window, _paddle, _ball);
     _ui = new UI(_window, _lives, this);
 
@@ -88,6 +89,7 @@ void GameManager::update(float dt)
     _paddle->update(dt);
     _ball->update(dt);
     _bigBall->update(dt);
+    _littleBall->update(dt);
     _powerupManager->update(dt);
 }
 
@@ -104,6 +106,7 @@ void GameManager::render()
     _paddle->render();
     _ball->render();
     _bigBall->render();
+    _littleBall->render();
     _brickManager->render();
     _powerupManager->render();
     _window->draw(_masterText);
