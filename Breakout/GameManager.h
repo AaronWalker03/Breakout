@@ -3,6 +3,7 @@
 #include "CONSTANTS.h"
 #include "Paddle.h"
 #include "Ball.h"
+#include "BigBall.h"
 #include "BrickManager.h"
 #include "PowerupManager.h"
 #include "MessagingSystem.h"
@@ -42,6 +43,7 @@ private:
     sf::RenderWindow* _window;
     Paddle* _paddle;
     Ball* _ball;
+    BigBall* _bigBall;
     BrickManager* _brickManager;
     PowerupManager* _powerupManager;
     MessagingSystem* _messagingSystem;

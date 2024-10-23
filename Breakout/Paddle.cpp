@@ -42,10 +42,6 @@ void Paddle::moveWithMouse()
     {
         _sprite.setPosition(sf::Mouse::getPosition().x - (_window->getSize().x - _width), _sprite.getPosition().y);
     }
-    else
-    {
-
-    }
 
 }
 
