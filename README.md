@@ -33,3 +33,13 @@ fire ball (green)
 
 # Time Details and Changelist
 <Add information to this section about the time you've taken for this task along with a professional changelist.>
+
+Cloned 14:40
+
+Code now compiles after removing include from PowerupBase 15:15
+
+Mouse works 16:00
+
+BigBall added 17:00
+
+LittleBall implemented 18:00
